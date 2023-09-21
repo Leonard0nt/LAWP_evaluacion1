@@ -20,13 +20,14 @@ from django.urls import path
 from app1 import views as app1
 from app1 import view1_2 as app1_2
 from app2 import views as app2
+from app2 import view2_2 as app2_2
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('app1/', app1.display),
     path('app1.2/',app1_2.display),
-    path('app2/', app2.display)
-
+    path('app2/', app2.display),
+    path('app2.2/', app2_2.display),
 ]
 
 
